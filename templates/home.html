@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+    body {
+      background-image: url('https://th.bing.com/th/id/OIP.emjarsrbJOi71cIp0P7LnwHaE8?pid=ImgDet&rs=1');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .moving-words {
+      font-size: 24px;
+      animation: moveWords 3s infinite;
+    }
+
+    @keyframes moveWords {
+      0% { transform: translateX(-50px); }
+      50% { transform: translateX(50px); }
+      100% { transform: translateX(-50px); }
+    }
+
+    .button-container {
+      margin-top: 30px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to K&M Well-Being</h1>
+    <p>We provide innovative solutions for your needs.</p>
+    <p class="moving-words">Build desired body not tomorrow .TODAY</p>
+    <p>Join us now and experience the difference!</p>
+    <div class="button-container">
+      <button class="button">Login</button>
+      <button class="button">Sign up</button>
+    </div>
+  </div>
+</body>
+</html>
